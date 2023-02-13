@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function digitalClock() {
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+
+            if (hours < 10) hours = "0" + hours;
+            if (minutes < 10) minutes = "0" + minutes;
+            if (seconds < 10) seconds = "0" + seconds;
+            document.getElementById("id_clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+            setTimeout("digitalClock()", 1000);
+            }
+
+            function sodiena() {
+    var d = new Date();
+
+var day=new Array("Svētdiena","Pirmdiena","Otrdiena",
+"Trešdiena","Ceturtdiena","Piektdiena","Sestdiena");
+
+var month=new Array("janvāris","februāris","marts","aprīlis","maijs","jūnijs",
+"jūlijs","augusts","septembris","oktobris","novembris","decembris");
+
+document.write(day[d.getDay()]+", " +d.getDate()+ ". " + month[d.getMonth()]
++ ", " + d.getFullYear() + " g.");
+}
+    </script>
+    <!-- <script type="module" src="index.js">var browserify = require('browserify'); </script> -->
+</head>
+<body>
+    
+    <canvas id="navbar"></canvas>
+
+    <div id="id_clock"></div>
+    <script>digitalClock();</script>
+<div id="datums">
+   <script>sodiena();</script>
+</div>
+    <canvas id="lauks1"></canvas>
+
+    <canvas id="lauks2"></canvas>
+
+    <img id="zimols" src="zimols.png">
+    <!-- <script type="commonjs" src="index.js"></script> -->
+</body>
+</html>

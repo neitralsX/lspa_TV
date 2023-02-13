@@ -1,0 +1,65 @@
+@media only screen and (max-width: 1360px){
+    body {
+        background-image: url("bg.jpeg");
+        background-repeat: no-repeat, repeat;
+        }
+
+    #zimols {
+        position: absolute;
+        left: 0%;
+        top: 86.8%;
+        width: 1360px;
+        height: 101px;
+    }
+
+    #lauks1 {
+        position: absolute;
+        top: 27.5%;
+        left: 6%;
+        width: 540px;
+        height: 368px;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    #lauks2 {
+        position: absolute;
+        top: 27.5%;
+        left: 52%;
+        width: 572px;
+        height: 368px;
+        background-color: white;
+        border-radius: 5px;
+    }
+    
+    #datums {
+        position: absolute;
+        width: 37%;
+        top: 30.3%;
+        left: 54.5%;
+        z-index: 1;
+        font-size: 40px;
+        color: #8C080C;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    #navbar {
+        position: absolute;
+        top: -1.5%;
+        left: 0%;
+        width: 1360px;
+        height: 129px;
+        background-color: white;
+        border-radius: 0px;
+        z-index: 0;
+    }
+
+    #id_clock {
+        position: absolute;
+        left: 40%;
+        top: 1%;
+        font-size: 80px;
+        color: #8C080C;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+}
